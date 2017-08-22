@@ -1,0 +1,1 @@
+Maven project with experimental projects in Java stack

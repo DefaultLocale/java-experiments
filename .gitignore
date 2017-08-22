@@ -1,0 +1,53 @@
+# Created by https://www.gitignore.io/api/maven,java
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Exclude maven wrapper
+!/.mvn/wrapper/maven-wrapper.jar
+
+
+### Java ###
+*.class
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/java-experiments/junit/junit5-samples/nbproject/
+/java-experiments/hackerrank/algorithm/warmup/time-conversion/nbproject/
+/java-experiments/hackerrank/algorithm/warmup/circular-array-rotation/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/between-two-sets/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/bon-appetit/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/socks-merchant/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/utopian-tree/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/angry-professor/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/beautiful-days/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/viral-advertising/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/append-and-delete/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/library-fine/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/non-divisible-subset/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/repeated-string/nbproject/
+/java-experiments/hackerrank/contests/rookie-rank2/knight-l-on-chessboard/nbproject/
+/java-experiments/hackerrank/contests/rookie-rank2/prefix-neighbors/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/bigger-is-greater/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/modified-kaprekar-numbers/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/the-time-in-words/nbproject/
+/java-experiments/hackerrank/algorithm/implementation/absolute-permutation/nbproject/
