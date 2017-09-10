@@ -13,6 +13,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import kz.defaultlocale.vaadin8.samples.AccordionSample;
 import kz.defaultlocale.vaadin8.samples.DefaultErrorHandlerSample;
 import kz.defaultlocale.vaadin8.samples.GridLayoutSample;
 import kz.defaultlocale.vaadin8.samples.GridSample;
@@ -29,7 +30,8 @@ class MainLayout extends VerticalLayout {
             new DefaultErrorHandlerSample(),
             new UserOriginatedEventSample(),
             new GridSample(),
-            new GridLayoutSample()
+            new GridLayoutSample(),
+            new AccordionSample()
     );
 
     private final VerticalLayout sampleLayout = new VerticalLayout();
