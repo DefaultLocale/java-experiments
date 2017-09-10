@@ -16,13 +16,15 @@ import kz.defaultlocale.vaadin8.samples.DefaultErrorHandlerSample;
 import kz.defaultlocale.vaadin8.samples.ImageResourceSample;
 import kz.defaultlocale.vaadin8.samples.Sample;
 import kz.defaultlocale.vaadin8.samples.StartPageSample;
+import kz.defaultlocale.vaadin8.samples.UserOriginatedEventSample;
 
 class MainLayout extends VerticalLayout {
 
     private final List<Sample> samples = Arrays.asList(
             new StartPageSample(),
             new ImageResourceSample(),
-            new DefaultErrorHandlerSample()
+            new DefaultErrorHandlerSample(),
+            new UserOriginatedEventSample()
     );
 
     private final VerticalLayout sampleLayout = new VerticalLayout();
