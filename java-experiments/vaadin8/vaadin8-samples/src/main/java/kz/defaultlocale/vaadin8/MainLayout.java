@@ -12,6 +12,7 @@ import com.vaadin.ui.VerticalLayout;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import kz.defaultlocale.vaadin8.samples.DefaultErrorHandlerSample;
 import kz.defaultlocale.vaadin8.samples.ImageResourceSample;
 import kz.defaultlocale.vaadin8.samples.Sample;
 import kz.defaultlocale.vaadin8.samples.StartPageSample;
@@ -20,7 +21,8 @@ class MainLayout extends VerticalLayout {
 
     private final List<Sample> samples = Arrays.asList(
             new StartPageSample(),
-            new ImageResourceSample()
+            new ImageResourceSample(),
+            new DefaultErrorHandlerSample()
     );
 
     private final VerticalLayout sampleLayout = new VerticalLayout();
