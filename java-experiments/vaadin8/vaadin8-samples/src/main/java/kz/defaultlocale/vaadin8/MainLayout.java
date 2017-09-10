@@ -22,6 +22,7 @@ import kz.defaultlocale.vaadin8.samples.ImageResourceSample;
 import kz.defaultlocale.vaadin8.samples.Sample;
 import kz.defaultlocale.vaadin8.samples.StartPageSample;
 import kz.defaultlocale.vaadin8.samples.UserOriginatedEventSample;
+import kz.defaultlocale.vaadin8.samples.WindowFeaturesSample;
 
 class MainLayout extends VerticalLayout {
 
@@ -33,7 +34,8 @@ class MainLayout extends VerticalLayout {
             new GridSample(),
             new GridLayoutSample(),
             new AccordionSample(),
-            new FormSample()
+            new FormSample(),
+            new WindowFeaturesSample()
     );
 
     private final VerticalLayout sampleLayout = new VerticalLayout();
