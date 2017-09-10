@@ -1,4 +1,4 @@
-package kz.defaultlocale.vaadin8.samples;
+package kz.defaultlocale.vaadin8;
 
 import javax.servlet.annotation.WebServlet;
 
@@ -24,20 +24,7 @@ public class MainUI extends UI {
 
     @Override
     protected void init(VaadinRequest vaadinRequest) {
-        final VerticalLayout layout = new VerticalLayout();
-        
-        final TextField name = new TextField();
-        name.setCaption("Type your name here:");
-
-        Button button = new Button("Click Me");
-        button.addClickListener( e -> {
-            layout.addComponent(new Label("Thanks " + name.getValue() 
-                    + ", it works!"));
-        });
-        
-        layout.addComponents(name, button);
-        
-        setContent(layout);
+        setContent(new MainLayout(this));
     }
 
     @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
