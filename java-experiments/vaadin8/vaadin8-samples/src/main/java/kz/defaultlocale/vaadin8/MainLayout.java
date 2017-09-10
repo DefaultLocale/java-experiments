@@ -62,7 +62,7 @@ class MainLayout extends VerticalLayout {
         Tree<Sample> samplesTree = new Tree<>();
         samplesTree.setSelectionMode(Grid.SelectionMode.SINGLE);
         samplesTree.setItems(samples);
-        samplesTree.setItemCaptionGenerator(s -> s.getTitle());
+        samplesTree.setItemCaptionGenerator(Sample::getTitle);
         samplesTree.addSelectionListener(this::showSample);
         samplesTree.select(samples.get(0));
         return samplesTree;
