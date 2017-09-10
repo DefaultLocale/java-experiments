@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.Optional;
 import kz.defaultlocale.vaadin8.samples.AccordionSample;
 import kz.defaultlocale.vaadin8.samples.DefaultErrorHandlerSample;
+import kz.defaultlocale.vaadin8.samples.FormSample;
 import kz.defaultlocale.vaadin8.samples.GridLayoutSample;
 import kz.defaultlocale.vaadin8.samples.GridSample;
 import kz.defaultlocale.vaadin8.samples.ImageResourceSample;
@@ -31,7 +32,8 @@ class MainLayout extends VerticalLayout {
             new UserOriginatedEventSample(),
             new GridSample(),
             new GridLayoutSample(),
-            new AccordionSample()
+            new AccordionSample(),
+            new FormSample()
     );
 
     private final VerticalLayout sampleLayout = new VerticalLayout();
