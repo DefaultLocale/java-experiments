@@ -12,6 +12,7 @@ import com.vaadin.ui.VerticalLayout;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import kz.defaultlocale.vaadin8.samples.DefaultErrorHandlerSample;
 import kz.defaultlocale.vaadin8.samples.GridSample;
 import kz.defaultlocale.vaadin8.samples.ImageResourceSample;
@@ -71,7 +72,9 @@ class MainLayout extends VerticalLayout {
     }
 
     private void showSample(SelectionEvent<Sample> event) {
-        Sample sample = event.getFirstSelectedItem().get();
+        Optional<Sample> selectedItem = event.getFirstSelectedItem();
+        if(!selectedItem.isPresent()) return;
+        Sample sample = selectedItem.get();
         navigator.navigateTo(sample.getTitle());
     }
 
