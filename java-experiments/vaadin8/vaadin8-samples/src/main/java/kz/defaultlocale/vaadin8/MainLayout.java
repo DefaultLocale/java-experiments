@@ -21,6 +21,7 @@ import kz.defaultlocale.vaadin8.samples.GridSample;
 import kz.defaultlocale.vaadin8.samples.ImageResourceSample;
 import kz.defaultlocale.vaadin8.samples.Sample;
 import kz.defaultlocale.vaadin8.samples.StartPageSample;
+import kz.defaultlocale.vaadin8.samples.TreeGridSample;
 import kz.defaultlocale.vaadin8.samples.UserOriginatedEventSample;
 import kz.defaultlocale.vaadin8.samples.WindowFeaturesSample;
 
@@ -35,7 +36,8 @@ class MainLayout extends VerticalLayout {
             new GridLayoutSample(),
             new AccordionSample(),
             new FormSample(),
-            new WindowFeaturesSample()
+            new WindowFeaturesSample(),
+            new TreeGridSample()
     );
 
     private final VerticalLayout sampleLayout = new VerticalLayout();
@@ -81,7 +83,9 @@ class MainLayout extends VerticalLayout {
 
     private void showSample(SelectionEvent<Sample> event) {
         Optional<Sample> selectedItem = event.getFirstSelectedItem();
-        if(!selectedItem.isPresent()) return;
+        if (!selectedItem.isPresent()) {
+            return;
+        }
         Sample sample = selectedItem.get();
         navigator.navigateTo(sample.getTitle());
     }
